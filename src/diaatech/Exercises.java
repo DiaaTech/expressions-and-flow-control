@@ -1,5 +1,5 @@
 package diaatech;
-
+import java.util.Scanner;
 public class Exercises {
 
 	/*
@@ -10,7 +10,13 @@ public class Exercises {
 	 sleepIn(false, true) → true
 	 */
 	public boolean sleepIn(boolean weekday, boolean vacation) {
-		return false;
+		
+		if (!weekday||vacation) {
+		 return true;
+		}
+		else {
+			return false;
+		}
 	}
 
 	/*
@@ -22,7 +28,13 @@ public class Exercises {
 	 monkeyTrouble(true, false) → false
 	 */
 	public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
-		return false;
+		if (aSmile||bSmile) {
+			return true;
+		}
+		else {
+			return false;
+		}
+		
 	}
 
 	/*
@@ -32,7 +44,14 @@ public class Exercises {
 	 sumDouble(2, 2) → 8
 	 */
 	public int sumDouble(int a, int b) {
-		return 0;
+		if (a == b) {
+			return (a+b)*2;
+		
+		}
+		else {
+		return a+b;
+		
+		}
 	}
 
 	/*
@@ -45,8 +64,14 @@ public class Exercises {
 	 diff21(-10) → 31
 	 */
 	public int diff21(int n) {
-		return 0;
+		if(n<21) {
+	    return 21-n;
+		}
+	      else {
+		  return (n-21)*2;
 	}
+	}
+	
 
 	/*
 	 5. We have a loud talking parrot. The "hour" parameter is the current hour time in the range 0..23.
