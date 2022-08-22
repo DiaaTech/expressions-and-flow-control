@@ -1,5 +1,7 @@
 package diaatech;
 
+import java.security.KeyStore.TrustedCertificateEntry;
+
 public class Exercises {
 
 	/*
@@ -10,8 +12,19 @@ public class Exercises {
 	 sleepIn(false, true) → true
 	 */
 	public boolean sleepIn(boolean weekday, boolean vacation) {
+		
+		
+		if (vacation == true) {
+			return true;
+
+		} else if (weekday = true) {
+			return true;
+		}
+
 		return false;
 	}
+
+	
 
 	/*
 	 2. We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling.
@@ -22,6 +35,16 @@ public class Exercises {
 	 monkeyTrouble(true, false) → false
 	 */
 	public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
+		
+		if ( aSmile == true && bSmile == true ) {
+			return true;
+			
+		} else if (aSmile == false && bSmile == false) {
+			return true;
+			
+		}
+		
+		
 		return false;
 	}
 
@@ -32,7 +55,10 @@ public class Exercises {
 	 sumDouble(2, 2) → 8
 	 */
 	public int sumDouble(int a, int b) {
-		return 0;
+		
+		if (a == b) 
+		
+		return (a+b)*2;
 	}
 
 	/*
@@ -262,7 +288,7 @@ public class Exercises {
 	 specialEleven(24) → false
 	 */
 	public boolean specialEleven(int n) {
-		return false;
+		return n % 11 == 1|| n % 11 == 1;
 	}
 
 	/*
@@ -273,7 +299,8 @@ public class Exercises {
 	 more20(22) → true
 	 */
 	public boolean more20(int n) {
-		return false;
+		return n % 20 == 1 || n% 20 == 2;
+;
 	}
 
 	/*
@@ -284,7 +311,7 @@ public class Exercises {
 	 old35(15) → false
 	 */
 	public boolean old35(int n) {
-		return false;
+		return n % 3 == 0 || n % 5 == 0;
 	}
 
 	/*
