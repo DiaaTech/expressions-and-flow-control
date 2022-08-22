@@ -154,7 +154,7 @@ private Exercises exercises = new Exercises();
 		assertEquals("Input: icyHot(2, 99)", false, exercises.icyHot(2, 99));
 		assertEquals("Input: icyHot(-2, 99)", false, exercises.icyHot(-2, 99));
 		assertEquals("Input: icyHot(0, 100)", false, exercises.icyHot(0, 100));
-	}
+		}
 
 	/*
 	 in1020(12, 99) → true
