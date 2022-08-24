@@ -71,7 +71,17 @@ public class Exercises {
 	 diff21(-10) → 31
 	 */
 	public int diff21(int n) {
-		return 0;
+		
+		
+		if (n > 21) {
+			return (n - 21) *2;
+		
+		else if (n < 21) {
+			
+			return 21-n;
+			
+		}
+			
 	}
 
 	/*
@@ -83,6 +93,13 @@ public class Exercises {
 	 parrotTrouble(false, 6) → false
 	 */
 	public boolean parrotTrouble(boolean talking, int hour) {
+		
+		if ((talking == true) ((hour <7) || (hour>20)) {
+			return true;
+			
+		}
+		else {
+	
 		return false;
 	}
 
@@ -93,8 +110,16 @@ public class Exercises {
 	 makes10(1, 9) → true
 	 */
 	public boolean makes10(int a, int b) {
+		
+		if ((a == 10) || (b == 10) || (a + b == 10)) {
+	}
+		return false;
+	} 
+	else {
 		return false;
 	}
+
+	
 
 	/*
 	 7. Given 2 int values, return true if one is negative and one is positive. Except if the parameter
@@ -115,6 +140,14 @@ public class Exercises {
 	 or35(8) → false
 	 */
 	public boolean or35(int n) {
+		
+		
+		if ((n % 3 == 0)) || ( n % 5 == 0)  {
+		return true; 
+		
+	} 
+	else{
+	
 		return false;
 	}
 
