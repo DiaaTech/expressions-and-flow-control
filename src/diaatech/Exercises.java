@@ -118,7 +118,7 @@ public class Exercises {
 	else {
 		return false;
 	}
-
+	
 	
 
 	/*
@@ -158,7 +158,14 @@ public class Exercises {
 	 icyHot(2, 120) → false
 	 */
 	public boolean icyHot(int temp1, int temp2) {
+		if ((temp1 < 0) && ( temp2 > 100) || (temp2 < 0) && ( temp1 > 100)) {
+			return true;
+		}
+		
+		
+		else {
 		return false;
+	}
 	}
 
 	/*
@@ -168,6 +175,10 @@ public class Exercises {
 	 in1020(8, 99) → false
 	 */
 	public boolean in1020(int a, int b) {
+		
+		
+		
+	}
 		return false;
 	}
 
@@ -179,6 +190,25 @@ public class Exercises {
 	 hasTeen(20, 10, 13) → true
 	 */
 	public boolean hasTeen(int a, int b, int c) {
+		
+		
+		if (( a  >= 13) && (a <= 19 )) {
+			return true;
+			
+		}
+
+		if (( b  >= 13) && (b <= 19 )) {
+			return true;
+		}
+
+		if (( c  >= 13) && (c <= 19 )) {
+			return true;
+			
+		}
+		else {
+			
+		
+	}
 		return false;
 	}
 
@@ -190,6 +220,19 @@ public class Exercises {
 	 loneTeen(13, 13) → false
 	 */
 	public boolean loneTeen(int a, int b) {
+		
+		
+		
+		if (( a  >= 13 && a <= 19 ) || ( b  >= 13) && (b <= 19 )) {
+			
+			return true;
+			
+	}
+		if (( a < 13 && a > 19) || (b < 13 && b > 19)) {
+			return true;
+			
+		}
+	else {
 		return false;
 	}
 
